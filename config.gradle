@@ -1,0 +1,25 @@
+ext {
+
+
+    signing = [
+            storeFile    : file('./app/keystore/eh.jks'),
+            storePassword: "123456",
+            keyAlias     : "key0",
+            keyPassword  : "e123456"
+    ]
+
+    android = [
+            applicationId    : "com.kupo.ElephantHead",
+            compileSdkVersion: 29,
+            minSdkVersion    : 17,
+            targetSdkVersion : 29,
+
+            debugAppName     : "电线竿-测试版",
+            releaseAppName   : "电线竿",
+            debugAppIcon     : "@mipmap/app_logo",
+            releaseAppIcon   : "@mipmap/app_logo",
+            versionCode      : 5,
+            versionName      : "1.0.2"
+    ]
+
+}

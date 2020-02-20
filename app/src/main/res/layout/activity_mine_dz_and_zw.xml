@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.activity.MineDzAndZwActivity">
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:id="@+id/my_zw_all_num_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:text="当前有     个展位"
+        android:textColor="#ff000000"
+        android:textSize="14sp" />
+
+    <include layout="@layout/recycle_view" />
+
+
+</LinearLayout>

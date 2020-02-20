@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".ui.transaction.activity.MyRentActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_rent_return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12"
+            android:src="@drawable/title_return" />
+
+
+        <LinearLayout
+            android:id="@+id/my_rent_location_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_rent_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingRight="@dimen/dp_10"
+                android:text="北京市"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/my_rent_location_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_rl"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="6px"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_56"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/my_rent_all_select_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/my_rent_all_select_im"
+                                android:layout_width="@dimen/dp_16"
+                                android:layout_height="@dimen/dp_16"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:src="@drawable/user_read_default" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:paddingLeft="@dimen/dp_6"
+                                android:text="全选"
+                                android:textColor="#333333"
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/my_rent_head_child_rv"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_48"
+                            android:layout_weight="8" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/my_rent_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_320"
+                        android:layout_marginBottom="@dimen/dp_20" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_margin="@dimen/dp_16"
+                android:background="@drawable/bg_content_white_border_white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="求租单价/天"
+                            android:textColor="#ff333333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="￥"
+                                android:textColor="#F85F53"
+                                android:textSize="@dimen/sp_14" />
+
+                            <EditText
+                                android:id="@+id/pay_rent_price_et"
+                                android:layout_width="@dimen/dp_68"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:text="1.0"
+                                android:textColor="#363636"
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总天数"
+                        android:textColor="#ff333333"
+                        android:textSize="@dimen/sp_14" />
+
+                    <EditText
+                        android:id="@+id/pay_rent_day_et"
+                        android:layout_width="@dimen/dp_68"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="10"
+                        android:textColor="#363636"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_32"
+                android:layout_marginBottom="@dimen/dp_68"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="求租须知："
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="求租信息发布后，展示时间为7天"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如无人租用，所付订金将全额退回您的钱包；"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="成功租用后，请及时使用展位哦..."
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/pay_rent_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="已选"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格："
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/pay_rent_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.00"
+                android:textColor="#F85F53"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pay_rent_sure_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="支付并发布"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义底部菜单栏里面的Item-->
+    <declare-styleable name="CanGradualView">
+        <attr name="av_tabIconNormal" format="reference" />
+        <attr name="av_tabIconSelected" format="reference" />
+        <!--string(指属性里面使用字符串)-->
+        <attr name="av_tabText" format="string" />
+        <attr name="av_tabTextSize" format="dimension" />
+        <!--color(指属性里面使用颜色color)-->
+        <attr name="av_textColorNormal" format="color" />
+        <attr name="av_textColorSelected" format="color" />
+    </declare-styleable>
+
+
+    <!--自定义验证码输入框-->
+    <declare-styleable name="CodeEditView">
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="integer" />
+        <attr name="borderSize" format="integer" />
+        <attr name="borderMargin" format="integer" />
+        <attr name="borderNum" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TPIndicator">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" /><!-- 下划线-->
+        <attr name="dividerColor" format="color" />   <!-- 分割线-->
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="pst_dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackgrounds" format="reference" />
+        <attr name="sameLine" format="boolean" />
+        <attr name="pst_textAllCaps" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MyWheelView">
+        <attr name="item_number" format="integer" />
+        <attr name="selected_line_color" format="color" />
+        <attr name="selected_background_color" format="color" />
+        <attr name="normal_text_color" format="color" />
+        <attr name="selected_text_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

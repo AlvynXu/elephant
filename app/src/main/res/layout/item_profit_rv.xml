@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_profit_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_profit_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="时间"
+        android:textColor="#ff666666"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/item_profit_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="事项"
+        android:textColor="#ff666666"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/item_profit_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="金额"
+        android:textColor="#ff666666"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

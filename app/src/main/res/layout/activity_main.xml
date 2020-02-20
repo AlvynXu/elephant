@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <com.kupo.ElephantHead.widget.CustomViewPager
+        android:id="@+id/custom_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/SpaceLine.H" />
+
+    <com.kupo.ElephantHead.widget.BaseLineInstructions
+        android:id="@+id/baseIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_bar"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.kupo.ElephantHead.widget.CanGradualView
+            android:id="@+id/home_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5"
+            app:av_tabIconNormal="@drawable/tab_home_default"
+            app:av_tabIconSelected="@drawable/tab_home_select"
+            app:av_tabText="@string/tab_home_name"
+            app:av_tabTextSize="@dimen/sp_12"
+            app:av_textColorNormal="@color/tab_gray_normal"
+            app:av_textColorSelected="@color/tab_blue_select"  />
+
+        <com.kupo.ElephantHead.widget.CanGradualView
+            android:id="@+id/project_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/dp_5"
+            app:av_tabIconNormal="@drawable/tab_project_default"
+            app:av_tabIconSelected="@drawable/tab_project_select"
+            app:av_tabText="@string/tab_project_name"
+            app:av_tabTextSize="@dimen/sp_12"
+            app:av_textColorNormal="@color/tab_gray_normal"
+            app:av_textColorSelected="@color/tab_blue_select"  />
+
+        <com.kupo.ElephantHead.widget.CanGradualView
+            android:id="@+id/crowd_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/dp_5"
+            app:av_tabIconNormal="@drawable/tab_crowd_default"
+            app:av_tabIconSelected="@drawable/tab_crowd_select"
+            app:av_tabText="@string/tab_crowd_name"
+            app:av_tabTextSize="@dimen/sp_12"
+            app:av_textColorNormal="@color/tab_gray_normal"
+            app:av_textColorSelected="@color/tab_blue_select" />
+
+        <com.kupo.ElephantHead.widget.CanGradualView
+            android:id="@+id/mine_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="@dimen/dp_5"
+            app:av_tabIconNormal="@drawable/tab_mine_default"
+            app:av_tabIconSelected="@drawable/tab_mine_select"
+            app:av_tabText="@string/tab_mine_name"
+            app:av_tabTextSize="@dimen/sp_12"
+            app:av_textColorNormal="@color/tab_gray_normal"
+            app:av_textColorSelected="@color/tab_blue_select" />
+
+
+    </com.kupo.ElephantHead.widget.BaseLineInstructions>
+
+
+</LinearLayout>

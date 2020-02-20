@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.room.fragment.RoomItemFragment">
+
+    <com.ms.banner.Banner
+        android:id="@+id/room_banner"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/banner"
+        android:visibility="gone" />
+
+    <include layout="@layout/recycle_view" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4px"
+        app:cardUseCompatPadding="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我也要发布"
+            android:textColor="#101010"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

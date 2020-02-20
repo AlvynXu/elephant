@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginRight="@dimen/dp_16"
+    android:background="@drawable/bg_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/qdz_item_icon" />
+
+                <TextView
+                    android:id="@+id/qdz_item_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:text="展位名：11111111"
+                    android:textColor="#ff666666"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qdz_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_19"
+                android:text="￥19800.0/年"
+                android:textColor="#ff333333"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qdz_item_buy"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_38"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_weight="3"
+            android:background="@drawable/bg_border_yellow"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="立即抢购"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

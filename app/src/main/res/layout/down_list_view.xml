@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/edit_ll"
+    android:layout_height="@dimen/dp_42"
+    android:layout_marginTop="@dimen/dp_4"
+    android:background="@drawable/bg_border_b3"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dp_4">
+
+    <TextView
+        android:id="@+id/edit_head_category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp_5"
+        android:text="类别选择"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/edit_head_category_choose_im"
+        android:layout_width="16dp"
+        android:layout_height="@dimen/dp_16"
+        android:layout_gravity="center"
+        android:src="@drawable/item_edit_down" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/popup_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="取消"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="售卖状态"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/popup_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/dp_10"
+            android:text="确定"
+            android:textColor="#ff8bc34a"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <View style="@style/SpaceLine.H" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/buy_status_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_14"
+            android:text="未售卖"
+            android:textColor="@color/textSelect"
+            android:textSize="@dimen/sp_18" />
+
+        <View
+            style="@style/SpaceLine.H"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/buy_status_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_14"
+            android:text="已售卖"
+            android:textColor="@color/textDefault"
+            android:textSize="@dimen/dp_19" />
+
+        <View
+            style="@style/SpaceLine.H"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40" />
+    </LinearLayout>
+
+</LinearLayout>

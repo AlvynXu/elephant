@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/room_details_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:text="这是文章标题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/room_details_look" />
+
+        <TextView
+            android:id="@+id/room_details_look_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_8"
+            android:text="0"
+            android:textColor="#b2b2b2"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:src="@drawable/room_details_share" />
+
+        <TextView
+            android:id="@+id/room_details_share_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_8"
+            android:text="0"
+            android:textColor="#b2b2b2"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:id="@+id/room_details_report_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/room_details_report_im"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:src="@drawable/room_details_report" />
+
+            <TextView
+                android:id="@+id/room_details_report_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_8"
+                android:text="举报"
+                android:textColor="#464646"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"
+        android:background="#F7F7F7" />
+
+    <TextView
+        android:id="@+id/room_details_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_5"
+        android:text="电话/微信"
+        android:textColor="#101010"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/room_details_location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="联系地址:"
+        android:textColor="#101010"
+        android:textSize="@dimen/sp_16" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"
+        android:background="#F7F7F7" />
+
+</LinearLayout>

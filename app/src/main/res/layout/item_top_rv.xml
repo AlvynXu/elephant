@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_top_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_72"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_top_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:lines="2"
+                android:text="众惠全能百万医疗2019款"
+                android:textColor="#101010"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/item_top_look_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:lines="1"
+                android:text="1230次浏览"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_72"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="4"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0px"
+            android:background="@color/white"
+            app:cardUseCompatPadding="false">
+
+            <com.kupo.ElephantHead.widget.FullImage
+                android:id="@+id/item_top_im"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                android:src="@drawable/default_banner" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <View style="@style/SpaceLine.H" />
+</LinearLayout>

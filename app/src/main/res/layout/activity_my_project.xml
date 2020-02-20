@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.mine.activity.MyProjectActivity">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="@dimen/dp_50">
+
+        <include layout="@layout/recycle_view" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight="1"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6px"
+        app:cardUseCompatPadding="false">
+
+        <TextView
+            android:id="@+id/add_project"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="新增项目"
+            android:textColor="#101010"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

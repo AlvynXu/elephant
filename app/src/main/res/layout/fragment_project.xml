@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/room_location_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8px"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/room_location_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingRight="@dimen/dp_10"
+                android:text="宁波市"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/room_location_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/white"
+        android:layout_below="@+id/room_location_ll"
+        app:tl_indicator_color="@color/yellow"
+        app:tl_indicator_width="40dp"
+        app:tl_tab_padding="30px"
+        app:tl_textSelectColor="#333333"
+        app:tl_textUnselectColor="@color/primaryText"
+        app:tl_textsize="@dimen/sp_18" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageView
+        android:id="@+id/go_release"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:src="@drawable/edit_btn" />
+</RelativeLayout>

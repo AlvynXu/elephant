@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/item_my_rent_head_rv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@drawable/bg_content_white_border_fe"
+        android:gravity="center"
+        android:minWidth="88dp"
+        android:text="萧山区"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

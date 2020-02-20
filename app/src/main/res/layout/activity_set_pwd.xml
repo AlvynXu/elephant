@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.main.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:background="@drawable/bg_border">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/user_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="6"
+                    android:background="@null"
+                    android:hint="设置密码"
+                    android:padding="@dimen/dp_16"
+                    android:textColor="#464646"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:id="@+id/pw_show_im"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:src="@drawable/eye" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="密码长度为6-20(数字/字母/标点)"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/user_setPwd_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_18"
+                android:background="@drawable/rectangle_yellow"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="下一步"
+                android:textColor="#464646"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

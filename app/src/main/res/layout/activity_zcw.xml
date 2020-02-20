@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:src="@drawable/zcw_banner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/bg_border_orange"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_10"
+                        android:text="首发限额:"
+                        android:textColor="#ff333333"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_border"
+                        android:padding="@dimen/dp_10"
+                        android:text="10000名"
+                        android:textColor="#ffff9800"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:background="@drawable/line_stroke" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/zcw_money_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥10.0"
+                            android:textColor="#ff8bc34a"
+                            android:textSize="@dimen/sp_20" />
+
+                        <TextView
+                            android:id="@+id/zcw_before_money_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥100.0"
+                            android:textColor="@color/secondText"
+                            android:textSize="@dimen/sp_14" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/update_agent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@drawable/bg_border_green"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="升级会员"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/update_agent_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@drawable/bg_content_gray"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="已是会员"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/sp_16"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_20"
+                    android:background="@drawable/line_rectangle_stroke"
+                    android:padding="@dimen/dp_20">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="解封团队管理权限:"
+                            android:textColor="#ff333333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.获得展位/地主推广高回报收益"
+                            android:textColor="#ff333333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.获得钱包提现权限"
+                            android:textColor="#ff333333"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.项目推广获项目分红收益"
+                            android:textColor="#ff333333"
+                            android:textSize="@dimen/sp_14" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="会员权益"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

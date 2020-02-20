@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/common_title" />
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_ll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/room_details_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/permission_dp_15"
+                android:padding="@dimen/dp_10"
+                android:text="这是文章标题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/room_details_look" />
+
+                <TextView
+                    android:id="@+id/room_details_look_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:text="0"
+                    android:textColor="#b2b2b2"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:src="@drawable/room_details_share" />
+
+                <TextView
+                    android:id="@+id/room_details_share_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:text="0"
+                    android:textColor="#b2b2b2"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:id="@+id/room_details_report_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/room_details_report_im"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:src="@drawable/room_details_share" />
+
+                    <TextView
+                        android:id="@+id/room_details_report_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:text="举报"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_4"
+                android:background="#F7F7F7" />
+
+            <TextView
+                android:id="@+id/room_details_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5"
+                android:text="电话/微信"
+                android:textColor="#101010"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/room_details_location_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="联系地址:"
+                android:textColor="#101010"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_4"
+                android:background="#F7F7F7" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/room_details_bottom_rl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/app_bar"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/transparent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/room_details_collect_im"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginRight="@dimen/dp_100"-->
+    <!--android:padding="@dimen/dp_12"-->
+    <!--android:src="@drawable/room_details_collect" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/room_details_share_im"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="@dimen/dp_30"-->
+    <!--android:padding="@dimen/dp_12"-->
+    <!--android:src="@drawable/room_details_share_black" />-->
+
+    <!--</RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/room_details_bottom_tv"
+        android:layout_width="@dimen/dp_128"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:background="@drawable/bg_border_green"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="投放"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/sp_16" />
+</RelativeLayout>

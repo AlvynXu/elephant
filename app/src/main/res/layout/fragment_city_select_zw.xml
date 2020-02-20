@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/popup_city_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="取消"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="地址选择"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/popup_city__sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/dp_10"
+            android:text="确定"
+            android:textColor="#ff8bc34a"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <View style="@style/SpaceLine.H" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.kupo.ElephantHead.widget.WheelView
+            android:id="@+id/province_wheel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_224"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_weight="1"
+            app:item_number="5" />
+
+        <com.kupo.ElephantHead.widget.WheelView
+            android:id="@+id/city_wheel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_224"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_weight="1"
+            app:item_number="5" />
+
+        <com.kupo.ElephantHead.widget.WheelView
+            android:id="@+id/area_wheel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_224"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_weight="1"
+            app:item_number="5" />
+
+        <com.kupo.ElephantHead.widget.WheelView
+            android:id="@+id/street_wheel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_224"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_weight="1"
+            app:item_number="5" />
+    </LinearLayout>
+
+
+</LinearLayout>

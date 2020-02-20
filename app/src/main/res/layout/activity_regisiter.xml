@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.main.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="186dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/user_iv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15"
+                        android:src="@drawable/login_phone_default" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15"
+                        android:text="+86"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:id="@+id/user_register_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_3"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="请输入手机号码"
+                        android:maxLength="11"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15"
+                        android:phoneNumber="true"
+                        android:textColor="#464646"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textSize="@dimen/app_side_size" />
+
+                    <ImageView
+                        android:id="@+id/user_register_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15"
+                        android:src="@drawable/delete"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/user_register_delete_default"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15" />
+
+                </LinearLayout>
+
+                <View style="@style/SpaceLine.H" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/user_register_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="5.5"
+                        android:background="@null"
+                        android:hint="验证码"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15"
+                        android:textColor="#464646"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textSize="@dimen/app_side_size" />
+
+                    <TextView
+                        android:id="@+id/user_register_sendCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:button="@null"
+                        android:enabled="false"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/permission_dp_15"
+                        android:paddingBottom="@dimen/permission_dp_15"
+                        android:text="获取验证码"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="6.5"
+                        android:background="#ffb2b2b2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="3.5" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/user_isRead_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <ImageView
+                    android:id="@+id/user_isRead"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:button="@null"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/user_read" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="已阅读" />
+
+                <TextView
+                    android:id="@+id/user_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="《Pole用户协议》"
+                    android:textColor="@color/yellow" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/user_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_18"
+                android:background="@drawable/rectangle_gray"
+                android:enabled="false"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

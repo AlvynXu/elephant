@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="tab_gray_normal">#666666</color>
+    <color name="tab_blue_select">#333333</color>
+    <color name="yellow">#FFD94B</color>
+    <color name="colorAccentPress">#ffa647</color>
+    <color name="colorAccentEnable">#fdffcb92</color>
+
+    <color name="white">#ffffff</color>
+    <color name="colorWhitePress">#FFCCCCCC</color>
+    <color name="colorWhiteEnable">#32FFFFFF</color>
+    <!--半透明-->
+    <color name="half_transparent">#66000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#dd000000</color>
+
+    <color name="primaryText">#181818</color>
+    <color name="secondText">#FF646464</color>
+    <color name="textSelect">#ff333333</color>
+
+    <color name="textDefault">#666666</color>
+    <color name="color_gray_2">#49505A</color>
+    <color name="color_gray_3">#5D646E</color>
+    <color name="color_gray_4">#717882</color>
+    <color name="color_gray_5">#858C96</color>
+    <color name="color_gray_6">#99A0AA</color>
+    <color name="color_gray_7">#ADB4BE</color>
+    <color name="color_gray_8">#C4C8D0</color>
+    <color name="color_gray_9">#D8DCE4</color>
+
+    <color name="windowBg">#515151</color>
+    <color name="strokeBg">#ECECEC</color>
+    <color name="bar">#F7F7F7</color>
+    <color name="background_dark">#f1f1f1</color>
+
+    <color name="f7">#fff7f7f7</color>
+    <color name="fb">#ff0101</color>
+    <color name="sh">#03aa41</color>
+    <color name="kfb">#323232</color>
+    <color name="wsh">#999999</color>
+    <color name="code_send">#000000</color>
+    <color name="f6">#F6F6F6</color>
+</resources>
